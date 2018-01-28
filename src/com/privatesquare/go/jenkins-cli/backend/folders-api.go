@@ -2,8 +2,8 @@ package backend
 
 
 import (
-	m "com/privatesquare/jenkins-cli/model"
-	u "com/privatesquare/jenkins-cli/utils"
+	m "com/privatesquare/go/jenkins-cli/model"
+	u "com/privatesquare/go/jenkins-cli/utils"
 	"fmt"
 	"encoding/json"
 	"log"

@@ -1,9 +1,9 @@
 package main
 
 import (
-	b "com/privatesquare/jenkins-cli/backend"
-	m "com/privatesquare/jenkins-cli/model"
-	u "com/privatesquare/jenkins-cli/utils"
+	b "com/privatesquare/go/jenkins-cli/backend"
+	m "com/privatesquare/go/jenkins-cli/model"
+	u "com/privatesquare/go/jenkins-cli/utils"
 	"flag"
 	"log"
 	"os"

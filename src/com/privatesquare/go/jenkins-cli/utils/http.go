@@ -2,7 +2,7 @@ package utils
 
 import (
 	"bytes"
-	m "com/privatesquare/jenkins-cli/model"
+	m "com/privatesquare/go/jenkins-cli/model"
 	"fmt"
 	"io/ioutil"
 	"net/http"
