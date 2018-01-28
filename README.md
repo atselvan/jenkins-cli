@@ -3,35 +3,38 @@
 This tool can be used to communicate with a Cloudbees Jenkins server.
 
 ```go
-Usage of C:\LogFiles\allan\workspace\go\jenkins-cli\jenkins-cli.exe:
-  -create
-        Create a folder in the root level of Jenkins
+Usage of ./jenkins-cli:
+  -createFolder
+    	Create a folder in the root level of Jenkins. Required: folderName
   -createGroup
-        Create a group in the root level of Jenkins
+    	Create a group on the root level of Jenkins. Required: groupName, roleName, memberId
   -createRole
-        Create a RBAC role in jenkins. Required arguments: roleName, rolePermissions
+    	Create a RBAC role on the root level of Jenkins. Required: roleName, rolePermissions
+  -deleteFolder
+    	Deletes a folder on the root level of Jenkins. Required: folderName
   -deleteGroup
-        Delete a group from the root level of Jenkins
+    	Delete a group from the root level of Jenkins
   -deleteRole
-        Delete a RBAC role from jenkins.
+    	Delete a RBAC role from jenkins.
   -folderName string
-        Name of the Jenkins folder
+    	Name of the Jenkins folder
   -groupName string
-        Group Name.
-  -jenkinsUrl string
-        Jenkins server URL
-  -list
-        Get a list of all the folder on the root level of Jenkins
-  -member string
-        Member value to grant access
+    	Group Name.
+  -jenkinsURL string
+    	Jenkins server URL (default "http://cicd.privatesquare.in:8080")
+  -listFolders
+    	Get a list of all the folder on the root level of Jenkins
+  -memberID string
+    	Member ID to grant access to a group
   -password string
-        Password for authentication
+    	Password for authentication (default "welkom")
   -roleName string
-        Role name.
+    	Role name.
   -rolePermissions string
-        Comma separated values of role permissions
+    	Comma separated values of role permissions
   -username string
-        Username for authentication
+    	Username for authentication (default "allan.selvan")
   -verbose
-        For debug logs set this flag
+    	For debug logs set this flag
+
 ```
